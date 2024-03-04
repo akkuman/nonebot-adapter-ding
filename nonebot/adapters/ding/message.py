@@ -94,6 +94,18 @@ class MessageSegment(BaseMessageSegment["Message"]):
         )
 
     @staticmethod
+    def link(title: str, text: str, message_url: str):
+        """发送 ``link`` 类型消息"""
+        return MessageSegment(
+            "link",
+            {
+                "title": title,
+                "text": text,
+                "messageUrl": message_url,
+            }
+        )
+
+    @staticmethod
     def actionCardSingleBtn(
         title: str, text: str, singleTitle: str, singleURL
     ) -> "MessageSegment":

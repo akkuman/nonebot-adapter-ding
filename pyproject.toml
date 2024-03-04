@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "nonebot-adapter-ding"
-version = "2.0.0-alpha.16"
+version = "3.0.0"
 description = "Ding adapter for nonebot2"
-authors = ["Artin <lengthmin@gmail.com>", "yanyongyu <yyy@nonebot.dev>"]
+authors = ["Artin <lengthmin@gmail.com>", "yanyongyu <yyy@nonebot.dev>", "Akkuman <akkumans@qq.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://v2.nonebot.dev/"
 repository = "https://github.com/nonebot/adapter-ding"
 documentation = "https://v2.nonebot.dev/"
-keywords = ["bot", "qq", "qqbot", "ding"]
+keywords = ["bot", "nonebot", "ding"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Framework :: Robot Framework",
@@ -23,8 +23,8 @@ exclude = ["nonebot/__init__.py", "nonebot/adapters/__init__.py"]
 
 [tool.poetry.dependencies]
 python = "^3.7.3"
-httpx = ">=0.20.0, <1.0.0"
-nonebot2 = "^2.0.0-alpha.14"
+httpx = "^0.27.0"
+nonebot2 = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
 nonebot2 = { git = "https://github.com/nonebot/nonebot2.git", branch = "dev" }

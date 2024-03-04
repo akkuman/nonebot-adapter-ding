@@ -15,6 +15,7 @@ class Config(BaseModel):
 
     secret: Optional[str] = Field(default=None, alias="ding_secret")
     access_token: Optional[str] = Field(default=None, alias="ding_access_token")
+    ding_webhook_urlpath: Optional[str] = Field(default='/ding') # webhook要监听的url path路径
 
     class Config:
         extra = "ignore"

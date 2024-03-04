@@ -9,6 +9,7 @@
 """
 
 from .bot import Bot as Bot
+from .adapter import Adapter
 from .utils import log as log
 from .event import Event as Event
 from .message import Message as Message
